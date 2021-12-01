@@ -9,9 +9,9 @@ dependencies:
     - pip:
         - pandas==1.0.1
         - numpy==1.18.1
-	- seaborn
+        - seaborn
         - xgboost==1.0.2
         - biopython
         - streamlit==1.2.0
         - streamlit_tags
-	- git+https://github.com/gadsbyfly/PyBioMed
+        - git+https://github.com/gadsbyfly/PyBioMed
