@@ -339,7 +339,7 @@ if archivo is not None:
 else:
     st.info('Awaiting for FASTA file to be uploaded.')
     if st.button('Press to use Example Dataset'):
-        archivo = open("multi.fasta","rb")
+        archivo = open("example.fasta","rb")
         file_name_st = archivo.name
         archivo_ok = io.TextIOWrapper(archivo)
         resultados_final_crudo, scores1 = druggability_app(archivo_ok)
