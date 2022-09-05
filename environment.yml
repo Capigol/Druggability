@@ -9,7 +9,7 @@ dependencies:
     - pip:
         - pandas==1.0.1
         - numpy==1.18.1
-        - seaborn
+        - plotly
         - xgboost==1.0.2
         - biopython
         - streamlit==1.2.0
