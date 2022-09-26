@@ -21,6 +21,7 @@ from pathlib import Path
 import base64
 from PIL import Image
 import io
+import plotly.graph_objects as go
 
 # Streamlit config
 
@@ -56,13 +57,14 @@ st.write("""
 
 **It is a free web-application for Druggability Prediction**
 
-In the framework target-guided drug discovery it is important to be able to assess the druggability of
-the proposed drug target prior to the implementation of a drug discovery project. Druggability is a
-concept coined by Hopkins and Groom to refer to the ability of a protein to be modulated by small,
-drug-like molecules.
-This tool generates four predictions of druggability based on protein sequence. 
+Druggability refers to the ability of a given protein to bind with high affinity to small, drug-like molecules.
+Assessing the druggability of potential pharmacological targets is of crucial importance before starting a 
+target-focused drug discovery campaign. Fast Druggability Assessment (FaDrA) is a druggability prediction web application based 
+on four linear classifiers, capable of discriminating druggable from non-druggable targets from complete proteomes in a few minutes,
+with acceptable accuracy, based only on the protein sequence.
 
-The tool uses the following packages: [PyBioMed](https://github.com/gadsbyfly/PyBioMed/), [Biopython](https://biopython.org/), [Seaborn](https://seaborn.pydata.org/index.html)
+
+The tool uses the following packages: [PyBioMed](https://github.com/gadsbyfly/PyBioMed/), [Biopython](https://biopython.org/), [Plotly](https://plotly.com/)
 
 The next workflow summarizes the steps performed by this method:
     
@@ -300,8 +302,6 @@ def druggability_analisis(resultados_final):
     keys =["Druggable", "Non-Druggable","Non-Conclusive"]
     
     # Create plot:
-
-    import plotly.graph_objects as go
     
     fig = go.Figure(data=[go.Pie(labels=keys, values=data_pie_total)])
     
