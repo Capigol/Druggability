@@ -348,9 +348,6 @@ else:
         st.markdown(filedownload(all_to_write), unsafe_allow_html=True)
 
 
-st.markdown("""
-         **To cite the application, please reference XXXXXXXXX**
-         """)
 
 
 
