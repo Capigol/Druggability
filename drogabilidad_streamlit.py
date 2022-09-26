@@ -331,7 +331,7 @@ if archivo is not None:
         resultados_final_crudo, scores1 = druggability_app(archivo_ok)
         all_to_write = druggability_analisis(resultados_final_crudo)        
         
-        st.markdown(":point_down: **Here you can download the raw predictions for 3/4 models**", unsafe_allow_html=True)
+        st.markdown(":point_down: **Here you can download the druggability predictions**", unsafe_allow_html=True)
         st.markdown(filedownload(all_to_write), unsafe_allow_html=True)
 
 
@@ -344,7 +344,7 @@ else:
         archivo_ok = io.TextIOWrapper(archivo)
         resultados_final_crudo, scores1 = druggability_app(archivo_ok)
         all_to_write = druggability_analisis(resultados_final_crudo)        
-        st.markdown(":point_down: **Here you can download the raw predictions for 3/4 models**", unsafe_allow_html=True)
+        st.markdown(":point_down: **Here you can download the druggability predictionss**", unsafe_allow_html=True)
         st.markdown(filedownload(all_to_write), unsafe_allow_html=True)
 
 
