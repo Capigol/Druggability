@@ -53,7 +53,7 @@ st.markdown("We are a drug discovery team with an interest in the development of
 #---------------------------------#
 
 st.write("""
-# LIDeB Tools - Druggability
+# LIDeB Tools - FaDrA
 
 **It is a free web-application for Druggability Prediction**
 
