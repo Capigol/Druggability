@@ -3,6 +3,7 @@ channels:
 - rdkit
 - defaults
 dependencies:
+    - libgcc=5.2.0
     - pip
     - pip:
         - streamlit
