@@ -1,6 +1,5 @@
 name: LUDe
 channels:
-- rdkit
 - defaults
 dependencies:
     - pip
