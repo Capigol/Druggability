@@ -1,7 +1,10 @@
 name: LUDe
 channels:
+- rdkit
+- conda-forge
 - defaults
 dependencies:
+    - libgcc=5.2.0
     - pip
     - pip:
         - pandas==1.0.1
