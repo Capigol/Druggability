@@ -1,7 +1,6 @@
 name: LUDe
 channels:
 - rdkit
-- conda-forge
 - defaults
 dependencies:
     - libgcc=5.2.0
