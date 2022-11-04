@@ -1,0 +1,8 @@
+streamlit==1.4.0
+plotly
+click==7.1.2
+xgboost==1.0.2
+biopython
+streamlit_tags
+git+https://github.com/gadsbyfly/PyBioMed
+protobuf~=3.19.0
