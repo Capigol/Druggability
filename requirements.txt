@@ -1,4 +1,5 @@
 streamlit==1.4.0
+altair==4.2.2
 plotly
 click==7.1.2
 xgboost==1.0.2
